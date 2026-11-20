@@ -71,3 +71,6 @@ Q: gRPC error after recompiling `proto/classifier.proto`
 
 A: Make sure the protobuf compiler `protoc` is compatible with the client's Python dependency `protobuf`, see [Protocol-Buffers' versioning scheme](https://protobuf.dev/support/version-support/#numbering). If the version of `protobuf` Python package is `major.minor.point`, it is best to use `protoc` version `minor.point`.
 
+Q: Can one perform a quick test on a deployed service?
+
+A: Yes, see [instructions on nextcloud](https://cloud.ecosysl.net/index.php/apps/files/files/315967?dir=/SII/TeePod/client-certs/).
