@@ -1,0 +1,155 @@
+# Tag vocabulary for image tagging. One tag per line; '#' starts a comment.
+# Each tag is embedded at image build time as "a photo of <tag>", so phrase
+# tags as they would complete that sentence. Edit freely, then rebuild.
+
+# People
+a person
+a group of people
+a child
+a baby
+a selfie
+a portrait
+a wedding
+a party
+a crowd
+
+# Animals
+a dog
+a cat
+a bird
+a horse
+a cow
+a sheep
+a fish
+an insect
+a butterfly
+wildlife
+
+# Nature and landscape
+a beach
+the ocean
+a lake
+a river
+a waterfall
+a mountain
+a forest
+a desert
+a field
+a garden
+flowers
+a tree
+snow
+a sunset
+a sunrise
+the night sky
+clouds
+rain
+a rainbow
+
+# Places and buildings
+a city
+a street
+a skyline
+a building
+a house
+a bridge
+a church
+a castle
+a monument
+a museum
+a park
+a playground
+a stadium
+an airport
+a train station
+a shop
+a market
+a restaurant
+a cafe
+a bar
+a hotel room
+an office
+a classroom
+a kitchen
+a living room
+a bedroom
+a bathroom
+
+# Food and drink
+food
+a meal
+a cake
+dessert
+fruit
+vegetables
+pizza
+a burger
+sushi
+bread
+coffee
+wine
+beer
+a cocktail
+
+# Vehicles
+a car
+a bus
+a truck
+a motorcycle
+a bicycle
+a train
+an airplane
+a boat
+a ship
+
+# Activities and events
+sports
+football
+basketball
+tennis
+swimming
+skiing
+surfing
+hiking
+running
+cycling
+camping
+a concert
+a festival
+fireworks
+a birthday party
+christmas
+a graduation
+travel
+
+# Objects
+a computer
+a phone
+a book
+a painting
+a toy
+a musical instrument
+a guitar
+a piano
+furniture
+clothing
+shoes
+jewelry
+a bag
+a camera
+a television
+
+# Image types
+a screenshot
+a document
+a receipt
+a whiteboard
+a diagram
+a map
+text
+a meme
+a drawing
+a black and white photo
+an underwater photo
+an aerial photo
+a close-up photo

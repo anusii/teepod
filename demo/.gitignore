@@ -1,0 +1,7 @@
+client-venv
+client-cert
+__pycache__
+*.pyc
+*.log
+*.pem
+*.csr

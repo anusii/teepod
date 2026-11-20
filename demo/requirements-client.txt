@@ -1,0 +1,5 @@
+grpcio==1.85.1
+grpcio-tools==1.85.1
+protobuf==7.35.1
+PyJWT[crypto]==2.10.1
+requests==2.32.3

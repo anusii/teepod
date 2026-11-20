@@ -1,0 +1,24 @@
+# Builds with BuildKit using the official Docker CLI image, which bundles the
+# Buildx plugin (the default gcr.io/cloud-builders/docker step falls back to
+# the deprecated legacy builder). Buildx's default "docker" driver loads the
+# result into the build host's daemon, so Cloud Build pushes it via `images:`
+# as a plain single-platform image (no attestation index), keeping the digest
+# that Confidential Space reports in the image_digest claim straightforward.
+steps:
+  - name: docker:27.3.1-cli
+    entrypoint: docker
+    env:
+      - DOCKER_BUILDKIT=1
+    args: ["build", "--tag", "${_IMAGE}", "."]
+
+images:
+  - "${_IMAGE}"
+
+substitutions:
+  _IMAGE: ""  # set by deploy_server.sh, e.g. us-central1-docker.pkg.dev/PROJECT/REPO/image-classifier:latest
+
+# The models stage downloads ~1.1 GB (GitHub + Hugging Face); allow 30 min.
+timeout: 1800s
+
+options:
+  logging: CLOUD_LOGGING_ONLY

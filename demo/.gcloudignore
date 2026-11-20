@@ -1,0 +1,14 @@
+# Explicit upload list for `gcloud builds submit` (otherwise gcloud derives one
+# from .gitignore, which can silently drop files from the build context).
+.gcloudignore
+.git/
+.gitignore
+__pycache__/
+*.pyc
+venv/
+.venv/
+*.zip
+# Never upload client/CA private keys or CSRs into the build context
+*-key.pem
+*.key
+*.csr
